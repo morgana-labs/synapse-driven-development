@@ -1,0 +1,8 @@
+# The synapse_cli binary is installed to ~/.synapse/bin by scripts/synapse-update.sh,
+# never committed here. Guard against a stray local copy.
+synapse_cli
+synapse_cli.*
+*.tar.gz
+
+# License is per-user, never committed.
+synapse.license
