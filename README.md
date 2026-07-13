@@ -6,6 +6,21 @@ A Claude Code / agent skill for **Synapse-Driven Development (SDD)**: author the
 invariant first, prove it with a point-mutation-checked test, and register it in Synapse as a
 durable constraint that re-surfaces to the next editor.
 
+<!-- ▶ DEMO VIDEO: on GitHub, edit this README and drag-drop synapse-promo.mp4 onto the empty line
+     below to embed the player, then delete this comment. (A web-uploaded attachment renders as an
+     inline player; a repo-committed .mp4 referenced by path does not, reliably.) -->
+
+
+**What it buys you** — a *single-edit trap* benchmark (301 runs): the share of edits that both work
+**and** preserve the hidden cross-function invariant they should have.
+
+| Model | alone | + Synapse |
+|---|---:|---:|
+| Haiku | 38% | **98%** |
+| Opus | 65% | **100%** |
+
+_Full breakdown — 95% CIs and cost per run — in **[Does it work?](#does-it-work)** below._
+
 The methodology itself is embedded in the `synapse_cli` binary (`synapse_cli guide`), so this skill
 stays thin: `SKILL.md` covers only how to get the tool running (install, version check, license,
 invocation) and defers the method to `guide`. The binary is the single source of truth for the
