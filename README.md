@@ -111,16 +111,13 @@ command or manual trigger is required.
 
 The skill ships only `SKILL.md` — **not** the `synapse_cli` binary. On first use it will:
 
-1. Compare the installed `~/.synapse/bin/synapse_cli` against the latest GitHub release. If the
-   binary is missing or out of date, it asks before installing, then runs the official installer:
-   `curl -fsSL https://github.com/morgana-labs/synapse-driven-development/releases/latest/download/install.sh | sh`
-   The installer downloads the signed + notarized + stapled macOS `.pkg`, verifies its checksum, and
-   installs it to `~/.synapse/bin` with `installer -target CurrentUserHomeDirectory` — **no sudo**.
-   Because the `.pkg` staples its notarization ticket, the binary lands non-quarantined and launches
-   with no online Gatekeeper check (a bare binary would force an online check that can hang).
-2. Require a valid `synapse.license` file (searched: `$SYNAPSE_LICENSE_FILE`, `./synapse.license`,
-   `<git-root>/synapse.license`, `~/.synapse/synapse.license`). `synapse_cli doctor` reports which
-   file it loaded and whether it is valid.
+Compare the installed `~/.synapse/bin/synapse_cli` against the latest GitHub release. If the
+binary is missing or out of date, it asks before installing, then runs the official installer:
+`curl -fsSL https://github.com/morgana-labs/synapse-driven-development/releases/latest/download/install.sh | sh`
+The installer downloads the signed + notarized + stapled macOS `.pkg`, verifies its checksum, and
+installs it to `~/.synapse/bin` with `installer -target CurrentUserHomeDirectory` — **no sudo**.
+Because the `.pkg` staples its notarization ticket, the binary lands non-quarantined and launches
+with no online Gatekeeper check (a bare binary would force an online check that can hang).
 
 From there, the method is `synapse_cli guide`. See `SKILL.md` for the full session flow.
 
