@@ -1,5 +1,7 @@
 <a href="https://libmorgana.com/synapse"><img src="synapse-wordmark-aurora.svg" alt="Synapse — by morgana labs" width="480"></a>
 
+https://github.com/user-attachments/assets/46c40cb0-0c11-4f29-a576-5fb29df21efe
+
 # synapse-driven-development
 
 A Claude Code / agent skill for **Synapse-Driven Development (SDD)**: author the cross-function
